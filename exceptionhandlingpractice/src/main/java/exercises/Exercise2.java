@@ -20,8 +20,8 @@ public class Exercise2 {
                     System.out.println("Enter dividend :");
                     int dividend = scanner.nextInt();
                     result[1] = dividend;
-                    if (result[0] < 0){
-                        throw new NegativeIntegerInputException("Negative input",);
+                    if (result[1] < 0){
+                        throw new NegativeIntegerInputException();
                     }
 
                     break;
@@ -29,8 +29,10 @@ public class Exercise2 {
                 } catch (InputMismatchException e) {
                     System.out.println("Invalid input. ");
                     scanner.next();
+                } catch (NegativeIntegerInputException e) {
+                    //   e.message(result[1]);
+                    System.out.println("This operation does not accept negative values. Please try again.");
                 }
-
 
 
             }

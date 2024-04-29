@@ -13,6 +13,7 @@ public class Main {
         System.out.println(Exercise1.divide(inputs[0], inputs[1]));
 */
 
-        Exercise3.divide();
+       // Exercise3.divide();
+        Exercise4.recursiveMethod();
     }
 }
