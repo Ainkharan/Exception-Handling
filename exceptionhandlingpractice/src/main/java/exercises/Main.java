@@ -14,6 +14,8 @@ public class Main {
 */
 
        // Exercise3.divide();
-        Exercise4.recursiveMethod();
+        //Exercise4.recursiveMethod();
+
+        Exercise5.healthInsuranceDataInput();
     }
 }
