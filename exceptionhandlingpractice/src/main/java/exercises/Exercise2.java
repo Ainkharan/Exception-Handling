@@ -10,19 +10,28 @@ public class Exercise2 {
         Scanner scanner = new Scanner(System.in);
 
             while (true) {
-                //result[0]
+
                 try {
                     System.out.println("Enter divisor :");
                     int divisor = scanner.nextInt();
                     result[0] = divisor;
+
+
                     System.out.println("Enter dividend :");
                     int dividend = scanner.nextInt();
                     result[1] = dividend;
+                    if (result[0] < 0){
+                        throw new NegativeIntegerInputException("Negative input",);
+                    }
+
                     break;
 
-                } catch (Exception e) {
+                } catch (InputMismatchException e) {
                     System.out.println("Invalid input. ");
+                    scanner.next();
                 }
+
+
 
             }
         return result ;
